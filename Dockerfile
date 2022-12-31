@@ -6,7 +6,6 @@ RUN apt-get -y install slapd
 EXPOSE 389/tcp
 RUN service slapd start
 RUN echo olcSaslSecProps: noanonymous,minssf=0,passcred >> /etc/ldap/slapd.d/cn=config.ldif
-RUN echo -e "wireshark-common    wireshark-common/install-setuid    boolean true" | debconf-set-selections -v 
 RUN  DEBIAN_FRONTEND=noninteractive apt-get -y install tshark 
 
 COPY entrypoint.sh /entrypoint.sh
