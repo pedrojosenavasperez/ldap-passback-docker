@@ -1,5 +1,6 @@
 # ldap-passback-docker
 
+Quickly deploy an LDAP server with support for plaintext authentication usable for LDAP PassBack attacks. 
 
 ## Usage
 1. Clone the repository
