@@ -12,4 +12,4 @@ docker build -t ldap-passback .
 ```
 docker run --rm -ti -p 389:389 ldap-passback
 ```
-4. Enjoy capturing credntials using passback attacks :D 
+4. Enjoy capturing credentials using passback attacks :D 
